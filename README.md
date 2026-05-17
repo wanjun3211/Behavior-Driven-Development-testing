@@ -4,7 +4,9 @@
 This is a very small project, and I was trying to use the concept of Behavior Driven Development concept to test a simple API. Python Benhave framework was involved applied this project.
 
 ## Project structure
-This is a very small project, and I was trying to use the concept of Behavior Driven Development concept to test a simple API. Python Benhave framework was involved applied this project.
+
+
+![Behave stucture](/images/behaveTesting.png "Behave pic")
 
 
 
