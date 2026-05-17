@@ -19,15 +19,15 @@ Another import file should include the .feathure file, which is using the **plai
 
 1. Project purpose
 
-   This is just to test API, address https://reqres.in/api/users/2, and make it in a understandable way using the plain text. In the file ended with .feature, it is has a very clear description about the scenario
+This is just to test API, address https://reqres.in/api/users/2, and make it in a understandable way using the plain text. In the file ended with .feature, it is has a very clear description about the scenario
 
-**Feature: Get user details from API**
+>**Feature: Get user details from API**
 
-**Scenario: Retrieve user with ID 2**   
-**Given the API endpoint is "https://reqres.in/api/users/2"**    
-**When I send a GET request**     
-**Then the response status code should be 200**    
-**And the user id should be 2**
+>**Scenario: Retrieve user with ID 2**   
+>**Given the API endpoint is "https://reqres.in/api/users/2"**    
+>**When I send a GET request**     
+>**Then the response status code should be 200**    
+>**And the user id should be 2**
 
   
 2. Python file in steps folder
