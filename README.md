@@ -58,4 +58,3 @@ def step_then_user_id(context, user_id):
     assert json_data["data"]["id"] == user_id
 ```
 
-<img width="619" height="655" alt="image" src="https://github.com/user-attachments/assets/89a043e1-595a-4087-ae96-92c31d3a58a1" />
