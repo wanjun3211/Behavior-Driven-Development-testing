@@ -15,15 +15,22 @@ Another import file should include the .feathure file, which is using the plain 
 
 
 
-## The Eight individual API Testing Items and Description
-1. API Status.
+## Coding explanation. 
 
-    Using the **Get** to checking connection with server is working properly. The script in this section is
-    ```javascript
-    pm.test("Status code is 200",  ()=> {
-    pm.response.to.have.status(200);
-    });
-    ```
+1. Project purpose
+
+   This is just to test API, address https://reqres.in/api/users/2, and make it in a understandable way using the plain text. In the file ended with .feature, it is has a very clear description about the scenario
+
+**
+Feature: Get user details from API
+
+  Scenario: Retrieve user with ID 2
+    Given the API endpoint is "https://reqres.in/api/users/2"
+    When I send a GET request
+    Then the response status code should be 200
+    And the user id should be 2
+**
+
   
 3. List of books
    
