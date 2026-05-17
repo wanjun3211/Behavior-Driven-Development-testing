@@ -30,28 +30,32 @@ Another import file should include the .feathure file, which is using the **plai
 **And the user id should be 2**
 
   
-3. List of books
-   
-    Using the  **Get** to list all the book information. The script in this section is
-```javascript
-pm.test("Status code is 200",  ()=> {
-    pm.response.to.have.status(200);
-});
+2. Python file in steps folder
 
-const response = pm.response.json();
-const books = response.filter((book) => book.available === true);
+    
+```python
 
-const book = books[0];
+import requests
+from behave import given, when, then
 
-if(book){
-pm.globals.set("avaBookId", books[0].id);
-}
+@given('the API endpoint is "{url}"')
+def step_given_endpoint(context, url):
+    context.url = url
 
-pm.test("Book found", ()=>{
-    pm.expect(book).to.be.an('object');
-    pm.expect(book.available).to.be.true;
-    pm.expect(book.available).to.eql(true);
-})
+@when('I send a GET request')
+def step_when_get_request(context):
+    context.response = requests.get(context.url)
+
+@then('the response status code should be {status_code:d}')
+def step_then_status_code(context, status_code):
+    print("Actual status:", context.response.status_code)
+    print("Response body:", context.response.text)
+    assert context.response.status_code == status_code
+
+@then('the user id should be {user_id:d}')
+def step_then_user_id(context, user_id):
+    json_data = context.response.json()
+    assert json_data["data"]["id"] == user_id
 ```
   
 
