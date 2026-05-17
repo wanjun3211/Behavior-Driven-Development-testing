@@ -8,7 +8,7 @@ This is a very small project, and I was trying to use the concept of Behavior Dr
 
 The folder structure should adhere to the following shown as it is the requirement of Behave framework. In the project folder, there should be a folder called features with steps folder inside. And get_user_steps.py can use other name but it should be python file that import requrests library and behave framework.   
 
-Another import file should include the .feathure file, which is using the plain text( Given, When, Then style) to describe the scenerio needing to be test.
+Another import file should include the .feathure file, which is using the **plain text**(** Given, When, Then style**) to describe the scenerio needing to be test.
 
 ![Behave stucture](/images/behaveTesting.png "Behave pic")
 
