@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a very small project, and I was trying to use the concept of Behavior Driven Development to test a simple API. Python Benhave framework was implemented.
+This is a very small project, and I was trying to use the concept of Behavior Driven Development to test a simple API. Python Behave framework was implemented.
 
 ## Project structure
 
