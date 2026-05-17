@@ -32,6 +32,8 @@ This is just to test API, address https://reqres.in/api/users/2, and make it in 
   
 ### 2. Python file in steps folder
 
+Behave framework identifies the Step function by decorators matching with feature file predicate. For Example, Given predicate in Feature file Scenario searches for step function having decorator “given.” Similar matching happens for When and Then
+
     
 ```python
 
