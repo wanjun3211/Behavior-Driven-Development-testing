@@ -5,7 +5,6 @@ This is a very small project, and I was trying to use the concept of Behavior Dr
 
 ## Project structure
 
-
 ![Behave stucture](/images/behaveTesting.png "Behave pic")
 
 
